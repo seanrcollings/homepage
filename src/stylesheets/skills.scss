@@ -1,46 +1,57 @@
-.skills { 
+.skills {
+
+  & h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+  } 
 
   &-content {
-
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 80px;
   }
 
   &-item {
     display: flex;
     align-items: center;
     transition: transform .3s ease;
-
+    width: 500px;
+    margin-bottom: 100px;
+    
     &-img {
-      width: 100px;
-      border-radius: 50%;
-      z-index: 5;
+      width: 150px;
+      z-index: 10;
+      align-self: center;
     }
 
     &-content {
-      margin-left: -25px;
-      width: 250px;
-      border: 1px solid $grey-36;
+      margin-left: -35px;
+      width: 350px;
+      border: 1px solid $soft-white;
       border-left: none;
-      height: 80px;
-      border-radius: 0px 40px 40px 0px;
+      height: 110px;
+      border-radius: 0px 55px 55px 0px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding-left: 50px;
-      font-size: 20px;
+      font-size: 27px;
       font-weight: bold;
       color: white;
-      background-color: $grey-36
+      background-color: rgb(46, 44, 44)
     }
 
     &-time {
-      font-size: 12px;
+      font-size: 15px;
       color: grey;
       font-weight: 400;
       font-family: $font-rob;
     }
 
-    &:hover {
-      
-    }
+    
   }
 }

@@ -1,4 +1,8 @@
 .sidebar {
+  
+}
+
+.sidebar-menu {
   position: fixed;
   top: 25%;
   display: flex;
@@ -25,7 +29,7 @@
   &-text {
     position: absolute;
     top: 50px;
-    right: -55px;
+    right: -60px;
     color: grey;
     font-family: $font-rob;
     transform: rotate(90deg);
