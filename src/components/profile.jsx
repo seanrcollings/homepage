@@ -3,7 +3,7 @@ import ProfileSection from './profileSection';
 import Sidebar from './sidebar';
 import Intro from './intro';
 import Skills from './skills';
-import SidebarMenu from './sidebarMenu';
+import Projects from './projects';
 
 export default function Profile() {
   const [typeOne, setTypeOne] = useState('dark')
@@ -34,7 +34,7 @@ export default function Profile() {
       <Sidebar  alternate={alternate} darkMode={darkMode} lightMode={lightMode}/>
       <ProfileSection type={typeOne}  section='1' component={<Intro/>}/>
       <ProfileSection type={typeTwo} section='2' component={<Skills/>}/>
-      <ProfileSection type={typeOne}  section='3' component={null}/>
+      <ProfileSection type={typeOne}  section='3' component={<Projects/>}/>
       <ProfileSection type={typeTwo} section='4' component={null}/>
     </div>
   )

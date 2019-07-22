@@ -4,6 +4,7 @@
 @import './sidebar';
 @import './intro';
 @import './skills';
+@import './projects';
 
 html, body {
   margin: 0px;
@@ -12,5 +13,11 @@ html, body {
 
   h1, h2, h3 {
     margin: 0px;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
   }
 }
