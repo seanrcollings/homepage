@@ -1,0 +1,59 @@
+.sidebar {
+  position: fixed;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid grey;
+  padding: 20px 30px 20px 30px;
+  border-radius: 10px;
+  transition: transform .3s ease;
+  
+  &-item {
+    text-decoration: none; 
+    color: $grey-36;
+    font-weight: bold;
+    text-align: right;
+
+    &:hover {
+      color: #636363;
+    }
+  }
+
+  &-text {
+    position: absolute;
+    top: 50px;
+    right: -55px;
+    color: grey;
+    font-family: $font-rob;
+    transform: rotate(90deg);
+    padding-bottom: 10px;
+  }
+  
+  &-hide {
+    left: -10px;
+    animation: slide-out 1s .2s forwards;
+
+    &:hover {
+      transform: translateX(10px) rotate(5deg);
+    }
+  }
+
+  &-show {
+    left: -120px;
+    animation: slide-in 1s .2s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes slide-in {
+  from { left: -120px }
+  to { left: -10px }
+}
+
+@keyframes slide-out {
+  from { left: -10px }
+  to { left: -120px }
+}

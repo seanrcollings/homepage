@@ -1,0 +1,46 @@
+.skills { 
+
+  &-content {
+
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    transition: transform .3s ease;
+
+    &-img {
+      width: 100px;
+      border-radius: 50%;
+      z-index: 5;
+    }
+
+    &-content {
+      margin-left: -25px;
+      width: 250px;
+      border: 1px solid $grey-36;
+      border-left: none;
+      height: 80px;
+      border-radius: 0px 40px 40px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 50px;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      background-color: $grey-36
+    }
+
+    &-time {
+      font-size: 12px;
+      color: grey;
+      font-weight: 400;
+      font-family: $font-rob;
+    }
+
+    &:hover {
+      
+    }
+  }
+}

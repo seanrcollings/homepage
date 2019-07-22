@@ -1,3 +1,15 @@
 .profile {
-  color: red; 
+  font-family: $font-mon;
+  
+  &-dark {
+    min-height: 100vh;
+    color: $soft-white;
+    background-color: $grey-36;
+  }
+  
+  &-light {
+    color: $grey-36;
+    background-color: $soft-white;
+    min-height: 100vh;
+  }
 }
