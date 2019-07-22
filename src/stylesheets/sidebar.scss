@@ -1,10 +1,8 @@
-.sidebar {
-  
-}
+.sidebar { position: fixed }
 
 .sidebar-menu {
-  position: fixed;
-  top: 25%;
+  margin-top: 30px;
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 200px;
@@ -13,7 +11,50 @@
   border: 1px solid grey;
   padding: 20px 30px 20px 30px;
   border-radius: 10px;
-  transition: transform .3s ease;
+  
+  &-wrapper {
+    position: relative;
+    transition: transform .3s ease;
+
+    &-hide {
+      left: -10px;
+      animation: slide-out 1s .2s forwards;
+  
+      &:hover {
+        transform: translateX(10px) rotate(5deg);
+      }
+    }
+  
+    &-show {
+      left: -120px;
+      animation: slide-in 1s .2s;
+      animation-fill-mode: forwards;
+    }
+
+    &-arrow {
+      position: absolute;
+      top: -30px;
+      left: 15px;
+      color: grey;
+      font-size: 25px;
+      
+      &:hover {
+        color: rgb(184, 184, 184);
+        cursor: pointer;
+      }
+    }
+
+    &-text {
+      position: absolute;
+      top: 50px;
+      right: -60px;
+      width: 110px;
+      color: grey;
+      font-family: $font-rob;
+      transform: rotate(90deg);
+      padding-bottom: 10px;
+    } 
+  }
   
   &-item {
     text-decoration: none; 
@@ -21,35 +62,22 @@
     font-weight: bold;
     text-align: right;
 
+    &:hover { color: #636363; }
+  }
+
+  &-button {
+    border: none;
+    background-color: $grey-36;
+    color: $soft-white;
+    font-weight: bold;
+    padding: 5px;
+
     &:hover {
-      color: #636363;
+      cursor: pointer;
+      background-color: #636363
     }
   }
 
-  &-text {
-    position: absolute;
-    top: 50px;
-    right: -60px;
-    color: grey;
-    font-family: $font-rob;
-    transform: rotate(90deg);
-    padding-bottom: 10px;
-  }
-  
-  &-hide {
-    left: -10px;
-    animation: slide-out 1s .2s forwards;
-
-    &:hover {
-      transform: translateX(10px) rotate(5deg);
-    }
-  }
-
-  &-show {
-    left: -120px;
-    animation: slide-in 1s .2s;
-    animation-fill-mode: forwards;
-  }
 }
 
 @keyframes slide-in {

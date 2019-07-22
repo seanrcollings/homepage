@@ -9,7 +9,7 @@ export default function Profile() {
   const [typeOne, setTypeOne] = useState('dark')
   const [typeTwo, setTypeTwo] = useState('light')
 
-  const handleClick = () => {
+  const alternate = () => {
     if (typeOne === 'dark') {
       setTypeOne('light')
       setTypeTwo('dark')
@@ -19,10 +19,19 @@ export default function Profile() {
     }
   }
 
+  const darkMode = () => {
+    setTypeOne('dark')
+    setTypeTwo('dark')
+  }
+
+  const lightMode = () => {
+    setTypeOne('light')
+    setTypeTwo('light')
+  }
+
   return (
     <div className='profile'>
-      <button onClick={handleClick}>Click Me</button>
-      <Sidebar/>
+      <Sidebar  alternate={alternate} darkMode={darkMode} lightMode={lightMode}/>
       <ProfileSection type={typeOne}  section='1' component={<Intro/>}/>
       <ProfileSection type={typeTwo} section='2' component={<Skills/>}/>
       <ProfileSection type={typeOne}  section='3' component={null}/>

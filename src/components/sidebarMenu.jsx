@@ -1,12 +1,15 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 export default function SidebarMenu(props) {
   const [focused, setFocused] = useState(false)
-
+  
   return (
-    <div className={`sidebar-menu ${focused ? 'sidebar-menu-show' : 'sidebar-menu-hide'}`} onClick={() => setFocused(!focused)}>
-      <span className='sidebar-menu-text'>{props.text}</span>
-      {props.children}
+    <div className={`sidebar-menu-wrapper ${focused ? 'sidebar-menu-wrapper-show' : 'sidebar-menu-wrapper-hide'}`}>
+      <span className='sidebar-menu-wrapper-arrow' onClick={() => setFocused(false)}><i className="fas fa-arrow-left"></i></span>
+      <span className='sidebar-menu-wrapper-text'>{props.text}</span>
+      <div className='sidebar-menu' onClick={() => setFocused(true)}>
+        {props.children}
+      </div>
     </div>
   )
 }
