@@ -14,7 +14,7 @@ export default function Projects() {
       <ProjectItem 
         title='Pi Site' 
         description='This is a site I built hosted on a Raspberry Pi' 
-        link='pisite.seanrcollings.com' 
+        link='http://pisite.seanrcollings.com' 
         img={pisite} 
         resources={['ReactJS', 'Flask', 'SCSS', 'Apache', 'Raspberry Pi 3A']}
         repository='https://github.com/seanrcollings/PiSite'
