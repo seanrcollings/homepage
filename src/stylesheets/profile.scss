@@ -5,11 +5,23 @@
     min-height: 100vh;
     color: $soft-white;
     background-color: $grey-36;
+
+    & a {
+      color: $soft-white;
+    }
   }
   
   &-light {
     color: $grey-36;
     background-color: $soft-white;
     min-height: 100vh;
+
+    & a {
+      color: $grey-36;
+    }
+
+    .intro-img {
+      border: 7px solid $grey-36;
+    }
   }
 }

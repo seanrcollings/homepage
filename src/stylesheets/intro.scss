@@ -4,8 +4,20 @@
   align-items: center;
   height: 100%;
 
-  &-title {
-    font-size: 60px;
+  &-title { font-size: 60px; }
+
+  &-contact {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: grey;
+
+    & a {
+      color: grey; 
+      text-decoration: none;
+
+      &:hover { text-decoration: underline; }
+    }
   }
 
   &-img {
@@ -32,10 +44,12 @@
         font-size: 10px;
         margin-top: 5px;
       }
+
     }
 
     & p {
       font-weight: bold;
+      margin-bottom: 0px;
     }
     
     &-items {
@@ -54,5 +68,36 @@
       margin-bottom: 10px;
       font-size: 16px;
     }
+
+    &-scroll {
+      font-family: $font-rob;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      color: white;
+      text-decoration: none;
+      
+      &:hover {
+        color: rgb(182, 182, 182);
+        cursor: pointer;
+      }
+    }
   }
+}
+
+.arrow {
+  transform: translatey(0px);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-5px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }

@@ -10,6 +10,7 @@ export default function ProjectItem(props) {
           <h3 className='projects-item-overlay-title'>{props.title}</h3>
           <div className='projects-item-overlay-description'>{props.description}</div>
           <div className='projects-item-overlay-resources'> • {renderResources()}</div>
+          <a href={props.repository} className='projects-item-overlay-source'>Source Code</a>
         </div>
       )
     }

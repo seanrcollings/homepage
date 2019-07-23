@@ -1,0 +1,15 @@
+.links {
+  width: 400px;
+  margin: auto;
+
+  & a {
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+      color: rgb(165, 165, 165);
+    }
+  }
+}

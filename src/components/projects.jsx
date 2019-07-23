@@ -14,17 +14,19 @@ export default function Projects() {
       <ProjectItem 
         title='Pi Site' 
         description='This is a site I built hosted on a Raspberry Pi' 
-        link='https://pisite.seanrcollings.com' 
+        link='pisite.seanrcollings.com' 
         img={pisite} 
         resources={['ReactJS', 'Flask', 'SCSS', 'Apache', 'Raspberry Pi 3A']}
+        repository='https://github.com/seanrcollings/PiSite'
       />
 
       <ProjectItem 
         title='My Blog' 
         description='A project I started to familirize myself with the Rails backend framework'
-        link='https://blog.seanrcollings.com' 
+        link='http://blog.seanrcollings.com' 
         img={blog} 
         resources={['ReactJS', 'Rails', 'SCSS', 'Heroku', 'Postgres']}
+        repository='https://github.com/seanrcollings/blog'
       />
 
       <ProjectItem 
@@ -33,14 +35,16 @@ export default function Projects() {
         link='https://moonshiver.herokuapp.com' 
         img={moonshiver} 
         resources={['ReactJS', 'Rails', 'SCSS', 'Heroku', 'Postgres']}
+        repository='https://github.com/seanrcollings/moonshiver'
       />
 
       <ProjectItem 
         title='Mastermind' 
         description="A version of the Mastermind board game built in React"
-        link='https://mastermind.seanrcollings.com' 
+        link='mastermind.seanrcollings.com' 
         img={mastermind} 
         resources={['ReactJS', 'SCSS']}
+        repository='https://github.com/seanrcollings/mastermind'
       />
     </div>    
   )

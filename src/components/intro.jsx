@@ -4,8 +4,12 @@ import me from '../img/small3.png'
 export default function Intro() {
   return (
     <div className='intro'>
+      <div className='intro-contact'>
+        Email: <a href='mailto:seanrcollings@gmail.com'>seanrcollings@gmail.com</a>
+        <div>Phone Number: (435) 799-7259 </div>
+      </div>
       <h2 className='intro-title'>Hi!</h2>
-      <img className='intro-img' src={me}/>
+      <img className='intro-img' src={me} alt='Sean Collings'/>
       <div className='intro-content'>
         <div className='intro-content-quote'>
           <em>The most important step a man can take. It's not the first one, is it? It's the next one. Always the next step, Dalinar.</em>
@@ -18,6 +22,7 @@ export default function Intro() {
           <li className='intro-content-item'>I also graduated from Bridgerland's IT program in the same year</li>
           <li className='intro-content-item'>I am attending USU in the fall, majoring in Computer Science</li>
         </ul>
+        <a href='#2' className='intro-content-scroll'><i className='fas fa-arrow-down arrow'></i> Scroll down for more</a> 
       </div>
     </div>
   )
