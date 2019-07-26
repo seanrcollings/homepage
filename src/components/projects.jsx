@@ -2,10 +2,10 @@ import React from 'react'
 import ProjectItem from './projectItem';
 
 // Images
-import pisite from '../img/pisite.png';
-import blog from '../img/blog.png';
-import moonshiver from '../img/moonshiver.png';
-import mastermind from '../img/mastermind.png'
+import pisite from '../img/projects/pisite.png';
+import blog from '../img/projects/blog.png';
+import moonshiver from '../img/projects/moonshiver.png';
+import mastermind from '../img/projects/mastermind.png'
 
 export default function Projects() {
   return (

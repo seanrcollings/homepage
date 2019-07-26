@@ -20,9 +20,7 @@
       left: -10px;
       animation: slide-out 1s .2s forwards;
   
-      &:hover {
-        transform: translateX(10px) rotate(5deg);
-      }
+      &:hover { transform: translateX(10px) rotate(5deg); }
     }
   
     &-show {

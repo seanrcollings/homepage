@@ -2,12 +2,12 @@ import React from 'react'
 import SkillsItem from './skillsItems';
 
 // images
-import react from '../img/react.png'
-import python from '../img/python.png'
-import rails from '../img/rails.png'
-import js from '../img/js.png'
-import html from '../img/html.png'
-import sql from '../img/sql.png'
+import react from '../img/skills/react.png'
+import python from '../img/skills/python.png'
+import rails from '../img/skills/rails.png'
+import js from '../img/skills/js.png'
+import html from '../img/skills/html.png'
+import sql from '../img/skills/sql.png'
 
 export default function Skills() {
   return (

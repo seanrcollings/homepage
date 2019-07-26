@@ -4,7 +4,8 @@ import Sidebar from './sidebar';
 import Intro from './intro';
 import Skills from './skills';
 import Projects from './projects';
-import Links from './links';
+import Certs from './certs';
+import Footer from './footer';
 
 export default function Profile() {
   const [typeOne, setTypeOne] = useState('dark')
@@ -36,7 +37,8 @@ export default function Profile() {
       <ProfileSection type={typeOne}  section='1' component={<Intro/>}/>
       <ProfileSection type={typeTwo} section='2' component={<Skills/>}/>
       <ProfileSection type={typeOne}  section='3' component={<Projects/>}/>
-      <ProfileSection type={typeTwo} section='4' component={<Links/>}/>
+      <ProfileSection type={typeTwo}  section='4' component={<Certs/>}/>
+      <Footer type={typeOne} section='5'/>
     </div>
   )
 }

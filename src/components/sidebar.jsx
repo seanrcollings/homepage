@@ -9,7 +9,8 @@ export default function Sidebar(props) {
       <a className='sidebar-menu-item' href='#1'>Intro</a>
       <a className='sidebar-menu-item' href='#2'>Skills</a>
       <a className='sidebar-menu-item' href='#3'>Projects</a>
-      <a className='sidebar-menu-item' href='#4'>Links</a>
+      <a className='sidebar-menu-item' href='#4'>Certs</a>
+      <a className='sidebar-menu-item' href='#5'>Links</a>
     </SidebarMenu>
     <SidebarMenu text='Color Mode'>
       <button className='sidebar-menu-button' onClick={props.alternate}>Alternate</button>

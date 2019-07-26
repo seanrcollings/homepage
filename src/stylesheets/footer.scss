@@ -1,0 +1,26 @@
+.footer {
+  min-height: 200px;
+  padding: 20px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &-section { height: 90%; }
+
+  &-divider {
+    width: 1px;
+    height: 150px;
+    background-color: grey;
+  }
+
+  & a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+      color: rgb(165, 165, 165);
+    }
+  }
+}
