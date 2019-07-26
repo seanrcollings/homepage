@@ -14,8 +14,9 @@ export default function Sidebar(props) {
     </SidebarMenu>
     <SidebarMenu text='Color Mode'>
       <button className='sidebar-menu-button' onClick={props.alternate}>Alternate</button>
-      <button className='sidebar-menu-button' onClick={props.darkMode}>Dark Mode</button>
-      <button className='sidebar-menu-button' onClick={props.lightMode}>Light Mode</button>
+      <button className='sidebar-menu-button' onClick={() => props.setColorMode('dark', 'dark')}>Dark Mode</button>
+      <button className='sidebar-menu-button' onClick={() => props.setColorMode('light', 'light')}>Light Mode</button>
+      <button className='sidebar-menu-button' onClick={() => props.setColorMode('midnight', 'midnight')}>Midnight</button>
     </SidebarMenu>
     </div>
   )

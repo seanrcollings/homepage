@@ -6,8 +6,11 @@
     color: $soft-white;
     background-color: $grey-36;
 
-    & a {
-      color: $soft-white;
+    & a { color: $soft-white; }
+
+    .certs-item {
+      &-text { border-right: 1px solid $soft-white; }
+      &-reverse-text { border-left: 1px solid $soft-white; }
     }
   }
   
@@ -16,12 +19,16 @@
     background-color: $soft-white;
     min-height: 100vh;
 
-    & a {
-      color: $grey-36;
-    }
+    & a { color: $grey-36; }
 
-    .intro-img {
-      border: 7px solid $grey-36;
-    }
+    .intro-img { border: 7px solid $grey-36; }
+  }
+
+  &-midnight {
+    color: rgb(209, 208, 208);
+    background-color: rgb(7, 7, 7);
+    min-height: 100vh;
+
+    & a { color: $soft-white; }
   }
 }

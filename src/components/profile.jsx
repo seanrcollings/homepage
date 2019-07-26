@@ -20,20 +20,14 @@ export default function Profile() {
       setTypeTwo('light')
     }
   }
-
-  const darkMode = () => {
-    setTypeOne('dark')
-    setTypeTwo('dark')
-  }
-
-  const lightMode = () => {
-    setTypeOne('light')
-    setTypeTwo('light')
+  const setColorMode = (colorOne, colorTwo) => {
+    setTypeOne(colorOne)
+    setTypeTwo(colorTwo)
   }
 
   return (
     <div className='profile'>
-      <Sidebar  alternate={alternate} darkMode={darkMode} lightMode={lightMode}/>
+      <Sidebar alternate={alternate} setColorMode={setColorMode}/>
       <ProfileSection type={typeOne}  section='1' component={<Intro/>}/>
       <ProfileSection type={typeTwo} section='2' component={<Skills/>}/>
       <ProfileSection type={typeOne}  section='3' component={<Projects/>}/>
