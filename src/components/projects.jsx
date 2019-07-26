@@ -41,7 +41,7 @@ export default function Projects() {
       <ProjectItem 
         title='Mastermind' 
         description="A version of the Mastermind board game built in React"
-        link='mastermind.seanrcollings.com' 
+        link='http://mastermind.seanrcollings.com' 
         img={mastermind} 
         resources={['ReactJS', 'SCSS']}
         repository='https://github.com/seanrcollings/mastermind'

@@ -15,10 +15,11 @@
     transition: transform .3s ease;
     width: 500px;
     margin-bottom: 100px;
+    font-size: 10px;
     
     &-img {
-      width: 150px;
-      z-index: 10;
+      width: 15em;
+      z-index: 5;
       align-self: center;
     }
 
@@ -33,7 +34,7 @@
       flex-direction: column;
       justify-content: center;
       padding-left: 50px;
-      font-size: 27px;
+      font-size: 2.7em;
       font-weight: bold;
       color: white;
       background-color: rgb(46, 44, 44)
@@ -45,7 +46,22 @@
       font-weight: 400;
       font-family: $font-rob;
     }
+  }
+}
 
-    
+@media only screen and (max-width: 650px) {
+  .skills {
+    &-item {
+      width: 300px;
+      font-size: 8px;
+
+      &-img {
+        
+      }
+
+      &-content {
+        height: 80px;
+      }
+    }
   }
 }
