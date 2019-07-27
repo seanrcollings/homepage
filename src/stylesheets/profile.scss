@@ -9,15 +9,18 @@
     & a { color: $soft-white; }
 
     .certs-item {
-      &-text { border-right: 1px solid $soft-white; }
+      &-normal-text { border-right: 1px solid $soft-white; }
       &-reverse-text { border-left: 1px solid $soft-white; }
     }
+
+    border-bottom: 1px solid grey;
   }
   
   &-light {
     color: $grey-36;
     background-color: $soft-white;
     min-height: 100vh;
+    border-bottom: 1px solid grey;
 
     & a { color: $grey-36; }
 
@@ -28,7 +31,13 @@
     color: rgb(209, 208, 208);
     background-color: rgb(7, 7, 7);
     min-height: 100vh;
+    border-bottom: 1px solid grey;
 
     & a { color: $soft-white; }
+
+    .certs-item {
+      &-normal-text { border-right: 1px solid $soft-white; }
+      &-reverse-text { border-left: 1px solid $soft-white; }
+    }
   }
 }
