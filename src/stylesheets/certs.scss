@@ -6,9 +6,8 @@
 
   &-item {
     display: flex;
-    justify-content: flex-end;
     margin-bottom: 50px;
-    
+
     &-text {
       align-self: flex-start;
       justify-self: center;
@@ -26,29 +25,21 @@
       width: 45vw;
     }
 
+    &-normal { justify-content: flex-end; }
+
     &-reverse {
-      display: flex;
-      align-items: center;
-      margin-bottom: 50px;
       flex-direction: row-reverse;
-      justify-content: flex-end;
 
       &-text {
-        align-self: flex-start;
-        justify-self: center;
         text-align: start;
+        border-right: 0px;
+        border-left: 1px solid $grey-36;
         margin-left: 20px;
-        padding: 20px 10px;
-        border-left: 1px solid black;
-        
-        &-desc {
-          font-family: $font-rob;
-        }
-      }
-      
-      &-img {
-        width: 45vw;
       }
     }
   } 
+}
+
+@media only screen and (max-width: 650px) {
+  .certs-item-text { font-size: 10px; }
 }

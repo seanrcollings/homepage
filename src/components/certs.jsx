@@ -11,7 +11,7 @@ import comptia from '../img/certs/a+.png'
 export default function Certs() {
   return (
     <div className='certs'>
-      <h1>CERTIFICATIONS</h1>
+      <h1>CERTS</h1>
       <CertsItem
         name='CompTIA A+'
         desc='PC hardware, software, troubleshooting, etc...'

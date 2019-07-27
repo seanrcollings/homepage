@@ -1,9 +1,11 @@
 .footer {
+  display: none;
   min-height: 200px;
   padding: 20px 150px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  font-size: 20px;
 
   &-section { height: 90%; }
 
@@ -14,7 +16,7 @@
   }
 
   & a {
-    font-size: 20px;
+    font-size: 1em;
     text-decoration: none;
     font-weight: 400;
 
@@ -22,5 +24,11 @@
       text-decoration: underline;
       color: rgb(165, 165, 165);
     }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .footer {
+    font-size: 12px;
   }
 }

@@ -1,15 +1,15 @@
 import React from 'react'
 
 export default function CertsItem(props) {
-  const baseClassName = props.reverse ? 'certs-item-reverse' : 'certs-item'
+  const className = props.reverse ? 'certs-item-reverse' : 'certs-item-normal'
 
   return (
-    <div className={`${baseClassName}`} >
-      <div className={`${baseClassName}-text`}>
-        <h2 className={`${baseClassName}-text-name`}>{props.name}</h2>
-        <p className={`${baseClassName}-text-desc`}>{props.desc}</p>
+    <div className={`${className} certs-item`} >
+      <div className={`${className}-text certs-item-text`}>
+        <h2 className={`certs-item-text-name`}>{props.name}</h2>
+        <p className={`certs-item-text-desc`}>{props.desc}</p>
       </div>
-      <img className={`${baseClassName}-img`} src={props.img} alt='cert'/>
+      <img className={`certs-item-img`} src={props.img} alt='cert'/>
     </div>
   )
 }
