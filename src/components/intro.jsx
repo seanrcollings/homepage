@@ -20,9 +20,10 @@ export default function Intro() {
           <li className='intro-content-item'>I started an interest in programming when I was 14 years old!</li>
           <li className='intro-content-item'>I graduated from Ridgeline Highschool in 2019</li>
           <li className='intro-content-item'>I also graduated from Bridgerland's IT program in the same year</li>
-          <li className='intro-content-item'>I am attending USU in the fall, majoring in Computer Science</li>
+          <li className='intro-content-item'>I am currently attending USU, majoring in Computer Science</li>
+          <l1 className='intro-content-item'>I currently work at <a href="novak-adapt.com">Novak Conversions</a> doing web development</l1>
         </ul>
-        <a href='#2' className='intro-content-scroll'><i className='fas fa-arrow-down arrow'></i> Scroll down for more</a> 
+         
       </div>
     </div>
   )

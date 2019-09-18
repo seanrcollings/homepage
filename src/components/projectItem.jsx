@@ -23,7 +23,7 @@ export default function ProjectItem(props) {
 
   return (
     <a href={props.link} className={`projects-item ${showOverlay ? 'projects-item-grow' : 'projects-item-shrink'}`} onMouseOver={() => setShowOverlay(true)} onMouseLeave={() => setShowOverlay(false)}>
-      <img className='projects-item-img' alt='Project' src={props.img} alt={props.img}/>
+      <img className='projects-item-img' alt='Project' src={props.img}/>
       {renderOverlay()}
     </a>
   )

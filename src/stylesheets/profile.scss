@@ -41,3 +41,18 @@
     }
   }
 }
+
+.content-scroll {
+  font-family: $font-rob;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  
+  &:hover {
+    color: rgb(182, 182, 182);
+    cursor: pointer;
+  }
+}
