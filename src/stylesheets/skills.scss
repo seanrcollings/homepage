@@ -1,4 +1,4 @@
-.skills { 
+.skills {
 
   &-content {
     display: flex;
@@ -16,7 +16,7 @@
     width: 500px;
     margin-bottom: 100px;
     font-size: 10px;
-    
+
     &-img {
       width: 15em;
       z-index: 5;
@@ -55,11 +55,21 @@
   }
 }
 
+
 .skills-page {
   background-color: $grey-36;
   color: white;
-  overflow: hidden;
+  // overflow: hidden;
   height: 100vh;
+  width: auto;
+
+
+  &-item {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+  }
 
   &-img { animation: fade-in 2s ease forwards; max-width: 60%; }
 
@@ -90,7 +100,7 @@
         font-size: 25px;
         li {
           margin: 10px 0px
-        } 
+        }
       }
     }
   }
