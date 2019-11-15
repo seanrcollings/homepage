@@ -36,8 +36,14 @@
       padding-left: 50px;
       font-size: 2.7em;
       font-weight: bold;
-      color: white;
-      background-color: rgb(46, 44, 44)
+      color: white !important;
+      background-color: rgb(46, 44, 44);
+      text-decoration: none !important;
+      transition: background-color .3s ease;
+
+      &:hover {
+        background-color: rgb(70, 67, 67);
+      }
     }
 
     &-time {
@@ -49,15 +55,113 @@
   }
 }
 
+.skills-page {
+  background-color: $grey-36;
+  color: white;
+  overflow: hidden;
+  height: 100vh;
+
+  &-img { animation: fade-in 2s ease forwards; max-width: 60%; }
+
+  &-overlay {
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 60vw;
+    animation: slide-overlay 1s forwards;
+
+    h1 {
+      letter-spacing: 5px;
+      font-size: 80px;
+      text-transform: uppercase;
+    }
+
+    &-content {
+      margin-left: 100px;
+
+      h2 {
+        font-size: 35px;
+        span {text-transform: capitalize;}
+      }
+
+      ul {
+        font-size: 25px;
+        li {
+          margin: 10px 0px
+        } 
+      }
+    }
+  }
+
+  &-button {
+    position: absolute;
+    border: 1px solid rgb(177, 175, 175);
+    top: 5px;
+    width: 200px;
+    height: 50px;
+    background-color: $soft-white;
+    font-size: 30px;
+    color: $grey-36;
+    transition: background-color .3s ease;
+    z-index: 100;
+
+    span {
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: white;
+      cursor: pointer;
+    }
+  }
+
+  .forward {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    text-align: left;
+    right: -160px;
+    transition: all .3s ease;
+    padding-left: 10px;
+
+    span { margin-left: 10px}
+
+    &:hover {
+      right: -10px
+    }
+  }
+
+  .back {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-align: right ;
+    left: -160px;
+    transition: all .3s ease;
+    padding-right: 10px;
+
+    span { margin-right: 10px}
+    &:hover {
+      left: -10px
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slide-overlay {
+  from {transform: translateX(50vw);}
+  to {transform: translateX(0px);}
+}
+
 @media only screen and (max-width: 650px) {
   .skills {
     &-item {
       width: 300px;
       font-size: 7px;
-
-      &-img {
-        
-      }
 
       &-content {
         height: 80px;

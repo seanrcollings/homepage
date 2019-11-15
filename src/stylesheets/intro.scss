@@ -5,7 +5,9 @@
   min-height: 100vh;
   position: relative;
 
-  &-title { font-size: 5vw; }
+  &-title {
+    font-size: 5vw;
+  }
 
   &-contact {
     position: absolute;
@@ -14,10 +16,12 @@
     color: grey;
 
     & a {
-      color: grey; 
+      color: grey;
       text-decoration: none;
 
-      &:hover { text-decoration: underline; }
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -34,7 +38,7 @@
     align-items: center;
 
     &-quote {
-      font-size: .6em;
+      font-size: 0.6em;
       width: 195px;
       margin: 5px;
       text-align: justify;
@@ -45,14 +49,17 @@
         font-size: 10px;
         margin-top: 5px;
       }
-
     }
 
     & p {
       font-weight: bold;
       margin-bottom: 0px;
     }
-    
+
+    & a {
+      text-decoration: underline;
+    }
+
     &-items {
       display: flex;
       flex-direction: column;
@@ -78,15 +85,15 @@
 }
 
 @keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-5px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-5px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -96,18 +103,16 @@
     }
 
     &-img {
-      width: 200px
+      width: 200px;
     }
 
-    
     &-content {
-
       & p {
         font-size: 17px;
         margin: 10px 10px;
         text-align: center;
       }
-      
+
       &-items {
         height: auto;
       }

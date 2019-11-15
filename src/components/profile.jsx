@@ -33,7 +33,6 @@ export default function Profile() {
       <ProfileSection type={typeOne}  section='3' component={<Projects/>}/>
       <ProfileSection type={typeTwo}  section='4' component={<Certs/>}/>
       <Footer type={typeOne} section='5'/>
-      <a href='#2' className='content-scroll'><i className='fas fa-arrow-down arrow'></i> Scroll down for more</a>
     </div>
   )
 }

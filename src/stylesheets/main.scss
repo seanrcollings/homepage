@@ -1,19 +1,25 @@
-@import './varaibles';
+@import "./varaibles";
 
-@import './profile';
-@import './sidebar';
-@import './intro';
-@import './skills';
-@import './projects';
-@import './certs';
-@import './footer';
+@import "./profile";
+@import "./sidebar";
+@import "./intro";
+@import "./skills";
+@import "./projects";
+@import "./certs";
+@import "./footer";
 
-html, body {
+html,
+body {
   margin: 0px;
+  padding: 0px;
   scroll-behavior: smooth;
   height: 100%;
+  font-family: $font-mon;
+  overflow-x: hidden;
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     margin: 0px;
   }
 
@@ -22,4 +28,9 @@ html, body {
     padding: 20px;
     font-size: 40px;
   }
+}
+
+a {
+  color: purple;
+  text-decoration: none;
 }
