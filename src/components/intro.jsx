@@ -22,19 +22,19 @@ export default function Intro() {
         <p>My name is Sean Collings and here are a few things about me</p>
         <ul className="intro-content-items">
           <li className="intro-content-item">
-            I started an interest in programming when I was 14 years old!
+            Started an interest in programming when I was 14 years old!
           </li>
           <li className="intro-content-item">
-            I graduated from Ridgeline Highschool in 2019
+            Graduated from Ridgeline Highschool in 2019
           </li>
           <li className="intro-content-item">
-            I also graduated from Bridgerland's IT program in the same year
+            Also graduated from Bridgerland's IT program in the same year
           </li>
           <li className="intro-content-item">
-            I am currently attending USU, majoring in Computer Science
+            Currently attending USU, majoring in Computer Science
           </li>
           <li className="intro-content-item">
-            I currently work at{" "}
+            Currently work at{" "}
             <a href="https://novak-adapt.com">Novak Conversions</a> as a web
             consultant
           </li>

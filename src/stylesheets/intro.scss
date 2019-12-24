@@ -67,12 +67,13 @@
       height: 130px;
       align-content: space-evenly;
       padding: 0px;
+      width: 100%;
     }
 
     &-item {
       width: 150px;
       height: 150px;
-      margin: 0px 10px;
+      margin: 0px 20px;
       margin-bottom: 10px;
       font-size: 16px;
     }
@@ -100,6 +101,10 @@
   .intro {
     &-contact {
       display: none;
+    }
+
+    &-title {
+      font-size: 70px;
     }
 
     &-img {
