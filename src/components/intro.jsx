@@ -1,48 +1,52 @@
 import React from "react";
 import me from "../img/small3.png";
+import Fade from "react-reveal/Fade";
+import resume from "../img/resume.pdf";
 
 export default function Intro() {
   return (
-    <div className="intro">
-      <div className="intro-contact">
-        Email:{" "}
-        <a href="mailto:seanrcollings@gmail.com">seanrcollings@gmail.com</a>
-        <div>Phone Number: (435) 799-7259 </div>
-      </div>
-      <h2 className="intro-title">Hi!</h2>
-      <img className="intro-img" src={me} alt="Sean Collings" />
-      <div className="intro-content">
-        <div className="intro-content-quote">
-          <em>
-            The most important step a man can take. It's not the first one, is
-            it? It's the next one. Always the next step, Dalinar.
-          </em>
-          <div>-Brandon Sanderson, Oathbringer</div>
+    <Fade bottom cascade>
+      <div className="intro">
+        <div className="intro-contact">
+          <a href={resume} className="intro-contact-resume">
+            Resume
+          </a>
         </div>
-        <p>My name is Sean Collings and here are a few things about me</p>
-        <ul className="intro-content-items">
-          <li className="intro-content-item">
-            Started an interest in programming when I was 14 years old!
-          </li>
-          <li className="intro-content-item">
-            Graduated from Ridgeline Highschool in 2019
-          </li>
-          <li className="intro-content-item">
-            Also graduated from Bridgerland's IT program in the same year
-          </li>
-          <li className="intro-content-item">
-            Currently attending USU, majoring in Computer Science
-          </li>
-          <li className="intro-content-item">
-            Currently work at{" "}
-            <a href="https://novak-adapt.com">Novak Conversions</a> as a web
-            consultant
-          </li>
-        </ul>
+        <h2 className="intro-title">Hi!</h2>
+        <img className="intro-img" src={me} alt="Sean Collings" />
+        <div className="intro-content">
+          <div className="intro-content-quote">
+            <em>
+              The most important step a man can take. It's not the first one, is
+              it? It's the next one. Always the next step, Dalinar.
+            </em>
+            <div>-Brandon Sanderson, Oathbringer</div>
+          </div>
+          <p>My name is Sean Collings and I am a developer</p>
+          <ul className="intro-content-items">
+            <li className="intro-content-item">
+              Started an interest in programming when I was 14 years old!
+            </li>
+            <li className="intro-content-item">
+              Graduated from Ridgeline Highschool in 2019
+            </li>
+            <li className="intro-content-item">
+              Also graduated from Bridgerland's IT program in the same year
+            </li>
+            <li className="intro-content-item">
+              Currently attending USU, majoring in Computer Science
+            </li>
+            <li className="intro-content-item">
+              Currently work at{" "}
+              <a href="https://novak-adapt.com">Novak Conversions</a> as a web
+              consultant
+            </li>
+          </ul>
+        </div>
+        <a href="#2" className="content-scroll helper-text">
+          <i className="fas fa-arrow-down arrow"></i> Scroll down for more
+        </a>
       </div>
-      <a href="#2" className="content-scroll helper-text">
-        <i className="fas fa-arrow-down arrow"></i> Scroll down for more
-      </a>
-    </div>
+    </Fade>
   );
 }

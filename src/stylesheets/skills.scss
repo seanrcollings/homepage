@@ -1,5 +1,4 @@
 .skills {
-
   &-content {
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +11,8 @@
   &-item {
     display: flex;
     align-items: center;
-    transition: transform .3s ease;
+    justify-content: start;
+    transition: transform 0.3s ease;
     width: 500px;
     margin-bottom: 100px;
     font-size: 10px;
@@ -20,7 +20,8 @@
     &-img {
       width: 15em;
       z-index: 5;
-      align-self: center;
+      margin-right: -5px;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     }
 
     &-content {
@@ -39,7 +40,7 @@
       color: white !important;
       background-color: rgb(46, 44, 44);
       text-decoration: none !important;
-      transition: background-color .3s ease;
+      transition: background-color 0.3s ease;
 
       &:hover {
         background-color: rgb(70, 67, 67);
@@ -53,8 +54,11 @@
       font-family: $font-rob;
     }
   }
-}
 
+  svg {
+    width: 100%;
+  }
+}
 
 .skills-page {
   background-color: $grey-36;
@@ -63,7 +67,6 @@
   height: 100vh;
   width: auto;
 
-
   &-item {
     position: relative;
     width: 100vw;
@@ -71,10 +74,13 @@
     display: inline-block;
   }
 
-  &-img { animation: fade-in 2s ease forwards; max-width: 60%; }
+  &-img {
+    animation: fade-in 2s ease forwards;
+    max-width: 60%;
+  }
 
   &-overlay {
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0px;
     right: 0px;
@@ -93,13 +99,15 @@
 
       h2 {
         font-size: 35px;
-        span {text-transform: capitalize;}
+        span {
+          text-transform: capitalize;
+        }
       }
 
       ul {
         font-size: 25px;
         li {
-          margin: 10px 0px
+          margin: 10px 0px;
         }
       }
     }
@@ -114,7 +122,7 @@
     background-color: $soft-white;
     font-size: 30px;
     color: $grey-36;
-    transition: background-color .3s ease;
+    transition: background-color 0.3s ease;
     z-index: 100;
 
     span {
@@ -132,39 +140,51 @@
     border-bottom-left-radius: 25px;
     text-align: left;
     right: -160px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     padding-left: 10px;
 
-    span { margin-left: 10px}
+    span {
+      margin-left: 10px;
+    }
 
     &:hover {
-      right: -10px
+      right: -10px;
     }
   }
 
   .back {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    text-align: right ;
+    text-align: right;
     left: -160px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     padding-right: 10px;
 
-    span { margin-right: 10px}
+    span {
+      margin-right: 10px;
+    }
     &:hover {
-      left: -10px
+      left: -10px;
     }
   }
 }
 
 @keyframes fade-in {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slide-overlay {
-  from {transform: translateX(50vw);}
-  to {transform: translateX(0px);}
+  from {
+    transform: translateX(50vw);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
 
 @media only screen and (max-width: 650px) {
