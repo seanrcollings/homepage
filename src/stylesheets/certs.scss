@@ -15,17 +15,19 @@
       margin-right: 20px;
       padding: 20px 10px;
       border-right: 1px solid $grey-36;
-      
+
       &-desc {
         font-family: $font-rob;
       }
     }
-    
+
     &-img {
       width: 45vw;
     }
 
-    &-normal { justify-content: flex-end; }
+    &-normal {
+      justify-content: flex-end;
+    }
 
     &-reverse {
       flex-direction: row-reverse;
@@ -37,7 +39,7 @@
         margin-left: 20px;
       }
     }
-  } 
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -46,17 +48,17 @@
     width: 90%;
     margin: auto;
     align-content: center !important;
-    justify-content: center !important; 
+    justify-content: center !important;
     margin-bottom: 30px;
 
-    &-text { 
+    &-text {
       font-size: 13px;
       text-align: center;
       border: none;
       border-bottom: 1px solid grey;
       padding-bottom: 5px;
       margin-bottom: 10px;
-      width: 70vw
+      width: 70vw;
     }
 
     &-reverse {

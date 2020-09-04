@@ -1,7 +1,12 @@
 import React from 'react'
 import SidebarMenu from './sidebarMenu';
 
-export default function Sidebar(props) {
+interface SidebarProps {
+  readonly alternate: () => void;
+  readonly setColorMode: (colorOne: string, colorTwo: string) => void;
+}
+
+export default function Sidebar(props: SidebarProps) {
 
   return (
     <div className='sidebar'>

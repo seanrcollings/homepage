@@ -1,6 +1,13 @@
 import React from 'react'
 
-export default function CertsItem(props) {
+interface CertsItemsProps {
+  readonly name: string;
+  readonly desc: string;
+  readonly img: string;
+  readonly reverse: boolean
+}
+
+export default function CertsItem(props: CertsItemsProps) {
   const className = props.reverse ? 'certs-item-reverse' : 'certs-item-normal'
 
   return (

@@ -20,7 +20,7 @@ export default function Profile() {
       setTypeTwo("light");
     }
   };
-  const setColorMode = (colorOne, colorTwo) => {
+  const setColorMode = (colorOne: string, colorTwo: string) => {
     setTypeOne(colorOne);
     setTypeTwo(colorTwo);
   };

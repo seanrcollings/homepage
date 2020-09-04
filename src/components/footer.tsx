@@ -1,6 +1,11 @@
 import React from "react";
 
-export default function Footer(props) {
+interface FooterProps {
+  readonly type: string
+  readonly section: string;
+}
+
+export default function Footer(props: FooterProps) {
   return (
     <footer id={props.section} className={`profile-${props.type} footer`}>
       <section className="footer-section footer-links">

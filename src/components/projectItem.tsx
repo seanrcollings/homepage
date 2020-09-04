@@ -1,9 +1,24 @@
 import React, { useState } from "react";
 
-export default function ProjectItem(props) {
+interface ProjectItemProps {
+  readonly title: string;
+  readonly description: string;
+  readonly link: string;
+  readonly img: string;
+  readonly resources: Array<string>;
+  readonly repository?: string;
+}
+
+export default function ProjectItem(props: ProjectItemProps) {
   const [showOverlay, setShowOverlay] = useState(false);
 
   const renderOverlay = () => {
+    const sourceCode =
+      props.repository !== undefined ? (
+        <a href={props.repository} className="projects-item-overlay-source">
+          Source Code
+        </a>
+      ) : null;
     if (showOverlay) {
       return (
         <div className="projects-item-overlay">
@@ -15,17 +30,17 @@ export default function ProjectItem(props) {
             {" "}
             • {renderResources()}
           </div>
-          <a href={props.repository} className="projects-item-overlay-source">
-            Source Code
-          </a>
+          {sourceCode}
         </div>
       );
     }
   };
   const renderResources = () => {
-    return props.resources.map(resource => {
+    return props.resources.map((resource) => {
       return (
-        <span className="projects-item-resources-resource">{resource} • </span>
+        <span className="projects-item-resources-resource" key={resource}>
+          {resource} •{" "}
+        </span>
       );
     });
   };

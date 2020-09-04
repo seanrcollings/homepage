@@ -3,8 +3,10 @@ import ReactDOM from "react-dom";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "./history";
 import Profile from "./components/profile";
-// eslint-disable-next-line
 import main from "./stylesheets/main.scss";
+// The styles variable is never used, but referencing main
+// causes the scss to load properly so ¯\_(ツ)_/¯
+const styles = main;
 
 ReactDOM.render(
   <Router history={history}>

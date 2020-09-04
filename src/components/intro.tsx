@@ -1,6 +1,6 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import me from "../img/small3.png";
-import Fade from "react-reveal/Fade";
 import resume from "../img/resume.pdf";
 
 export default function Intro() {
@@ -38,8 +38,8 @@ export default function Intro() {
             </li>
             <li className="intro-content-item">
               Currently work at{" "}
-              <a href="https://novak-adapt.com">Novak Conversions</a> as a web
-              consultant
+              <a href="https://www.atomicjolt.com/">Atomic Jolt</a> as a web
+              developer
             </li>
           </ul>
         </div>

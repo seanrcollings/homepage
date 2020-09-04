@@ -7,11 +7,28 @@ import pisiteapi from "../img/projects/pisiteapi.jpg";
 import blog from "../img/projects/blog.png";
 import moonshiver from "../img/projects/moonshiver.png";
 import mastermind from "../img/projects/mastermind.png";
+import mugenmonkey from "../img/projects/mugenmonkey.png";
+import arc from "../img/projects/arc.png";
 
 export default function Projects() {
   return (
     <div className="projects">
       <h1>PROJECTS</h1>
+      <ProjectItem
+        title="ARC"
+        description="A Regular CLI - Cli building tool for Python"
+        link="https://pypi.org/project/arc-cli/"
+        img={arc}
+        resources={["Python"]}
+        repository="https://github.com/seanrcollings/arc"
+      />
+      <ProjectItem
+        title="Mugenmonkey"
+        description="Series of Character planners for the Soulsborne games that I help maintain"
+        link="https://mugenmonkey.com"
+        img={mugenmonkey}
+        resources={["Ruby", "Rails", "React", "Postgres", "TypeScript"]}
+      />
       <ProjectItem
         title="Pi Site"
         description="Frontend for the Pi Site API"
