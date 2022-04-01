@@ -3,15 +3,14 @@ import ReactDOM from "react-dom";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "./history";
 import Profile from "./components/profile";
-import main from "./stylesheets/main.scss";
-// The styles variable is never used, but referencing main
-// causes the scss to load properly so ¯\_(ツ)_/¯
-const styles = main;
+import "./stylesheets/main.scss";
+import CanvasTest from "./components/canvasTest";
 
 ReactDOM.render(
   <Router history={history}>
     <Switch>
       <Route path="/" exact component={Profile} />
+      <Route path="/canvas" exact component={CanvasTest} />
     </Switch>
   </Router>,
   document.getElementById("root")
