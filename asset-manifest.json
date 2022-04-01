@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.68ad9b91.chunk.css",
-    "main.js": "/static/js/main.9601f463.chunk.js",
-    "main.js.map": "/static/js/main.9601f463.chunk.js.map",
+    "main.css": "/static/css/main.33369207.chunk.css",
+    "main.js": "/static/js/main.cca09bcc.chunk.js",
+    "main.js.map": "/static/js/main.cca09bcc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cc36b19e.js",
     "runtime-main.js.map": "/static/js/runtime-main.cc36b19e.js.map",
-    "static/js/2.a8f2c4a5.chunk.js": "/static/js/2.a8f2c4a5.chunk.js",
-    "static/js/2.a8f2c4a5.chunk.js.map": "/static/js/2.a8f2c4a5.chunk.js.map",
+    "static/js/2.bc5ca2e2.chunk.js": "/static/js/2.bc5ca2e2.chunk.js",
+    "static/js/2.bc5ca2e2.chunk.js.map": "/static/js/2.bc5ca2e2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2b2aabe284b739232b4ddb38d35d7f20.js": "/precache-manifest.2b2aabe284b739232b4ddb38d35d7f20.js",
+    "precache-manifest.45dd07d2c17b14c0f2d7cb7ec9630d0c.js": "/precache-manifest.45dd07d2c17b14c0f2d7cb7ec9630d0c.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.68ad9b91.chunk.css.map": "/static/css/main.68ad9b91.chunk.css.map",
-    "static/js/2.a8f2c4a5.chunk.js.LICENSE.txt": "/static/js/2.a8f2c4a5.chunk.js.LICENSE.txt",
+    "static/css/main.33369207.chunk.css.map": "/static/css/main.33369207.chunk.css.map",
+    "static/js/2.bc5ca2e2.chunk.js.LICENSE.txt": "/static/js/2.bc5ca2e2.chunk.js.LICENSE.txt",
     "static/media/a+.png": "/static/media/a+.58a917a0.png",
     "static/media/arc.png": "/static/media/arc.c8d62b5a.png",
     "static/media/blog.png": "/static/media/blog.ff486286.png",
@@ -29,15 +29,15 @@
     "static/media/pisiteapi.jpg": "/static/media/pisiteapi.c588441c.jpg",
     "static/media/rails.jpg": "/static/media/rails.378ce4dc.jpg",
     "static/media/react.png": "/static/media/react.f11b469e.png",
-    "static/media/resume.pdf": "/static/media/resume.dada47aa.pdf",
+    "static/media/resume.pdf": "/static/media/resume.54d60ead.pdf",
     "static/media/ruby.png": "/static/media/ruby.f979e098.png",
     "static/media/small3.png": "/static/media/small3.5783a9a0.png",
     "static/media/sql.png": "/static/media/sql.934a45ea.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cc36b19e.js",
-    "static/js/2.a8f2c4a5.chunk.js",
-    "static/css/main.68ad9b91.chunk.css",
-    "static/js/main.9601f463.chunk.js"
+    "static/js/2.bc5ca2e2.chunk.js",
+    "static/css/main.33369207.chunk.css",
+    "static/js/main.cca09bcc.chunk.js"
   ]
 }
